@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Minha Div </title>
+    <style>
+        .minha_div
+        {
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    
+    Clique neste botão
+    
+    <br>
+    
+    <button onclick="Trocar_Cor();">
+        <img src="icone.png" width="60px">
+        <br>
+        <b>Exemplo</b> 
+    </button>
+
+    <div class="minha_div" id="minha_div">
+        texto dentro da div
+    </div>
+</body>
+    <script>
+        contador = 0
+        function Trocar_Cor()
+        {
+            minha_div.style.backgroundColor = "green"
+            minha_div.style.borderStyle = "solid"
+            minha_div.style.borderColor = "red"
+            contador = contador + 1
+            minha_div.innerHTML = contador //para adiconar mais palavras é só colocar o sinal de + antes do =//
+            
+        }
+    </script>
+</html>
